@@ -1,0 +1,96 @@
+.caseIntr {
+
+    // retrack
+    &__retrack {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 60px;
+        text-decoration: none;
+        transition: 360ms ease-out;
+
+        &:hover {
+            gap: 20px;
+
+            .caseIntr__retrackLabel {
+                letter-spacing: 0.2em;
+            }
+
+        }
+    }
+    &__retrackArrow {
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__retrackLabel {
+        font-size: 2.4rem;
+        line-height: 1em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $navyFaded;
+        transition: 360ms ease-out;
+    }
+
+    // intro
+    &__intro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+        @media #{$screen-768} {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+    &__heading {
+        margin-bottom: 8px;
+        padding-right: 20px;
+        text-align: right;
+
+        @media #{$screen-768} {
+            padding-right: 0;
+            text-align: left;
+        }
+    }
+    &__data {
+        padding-right: 20px;
+        font-size: 1.2rem;
+        line-height: 1em;
+        color: $navyFaded;
+        text-align: right;
+
+        @media #{$screen-768} {
+            padding-right: 0;
+            text-align: left;
+        }
+        
+    }
+    
+    // mark
+    &__subMark {
+        margin-top: 40px;
+
+        @media #{$screen-768} {
+            margin-top: 80px;
+        }
+    }
+    &__subMark .subMark__right .subMark__line {
+        display: none;
+
+        @media #{$screen-1200} {
+            display: block;
+        }
+    }
+    &__subMark .subMark__tags {
+
+        @media #{$screen-768} {
+            justify-content: flex-end;
+        }
+        @media #{$screen-1200} {
+            justify-content: flex-start;
+        }
+    }
+}

@@ -1,0 +1,284 @@
+// typography
+
+body,
+html {
+    font-weight: 400;
+    font-family: $fontInter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-weight: 700;
+}
+
+//
+// Classed text
+//
+
+.p {
+    font-family: $fontInter;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: $navy;
+
+    &--big {
+        font-size: 1.7rem;
+    }
+
+    @media #{$screen-768} {
+        font-size: 1.5rem;
+        line-height: 1.5em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 1.6rem;
+        line-height: 1.6em;
+
+        &--big {
+            font-size: 2.4rem;
+            line-height: 1.4em;
+        }
+    }
+}
+
+.h1 {
+    margin-top: 0;
+    font-size: 3.6rem;
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: $navy;
+    &--white {
+        color: $white;
+    }
+
+    @media #{$screen-768} {
+        font-size: 4.8rem;
+        line-height: 1.2em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 5.2rem;
+        line-height: 1.2em;
+        font-weight: 600;
+    }
+}
+
+.h2 {
+    // margin-bottom: 20px;
+    font-size: 3.2rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: $navy;
+    &--white {
+        color: $white;
+    }
+
+    @media #{$screen-768} {
+        font-size: 3.6rem;
+        line-height: 1.2em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 4.0rem;
+        line-height: 1.2em;
+        font-weight: 600;
+    }
+}
+
+.h3 {
+    font-size: 2.4rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: $navy;
+    &--white {
+        color: $white;
+    }
+
+    @media #{$screen-768} {
+        font-size: 3.2rem;
+        line-height: 1.4em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 3.2rem;
+        line-height: 1.4em;
+        font-weight: 600;
+    }
+}
+
+.h4 {
+    font-size: 2rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: $navy;
+    &--white {
+        color: $white;
+    }
+
+    @media #{$screen-768} {
+        font-size: 2.4rem;
+        line-height: 1.4em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 2.4rem;
+        line-height: 1.4em;
+        font-weight: 600;
+    }
+}
+
+.h5 {
+    // margin-bottom: 20px;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: $navy;
+    &--white {
+        color: $white;
+    }
+
+    @media #{$screen-768} {
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 2rem;
+        line-height: 1.5em;
+        font-weight: 600;
+    }
+}
+
+.h6 {
+    // margin-bottom: 20px;
+    font-size: 1.6rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: $navy;
+    &--white {
+        color: $white;
+    }
+
+    @media #{$screen-768} {
+        font-size: 2rem;
+        line-height: 1.4em;
+    }
+
+    @media #{$screen-1200} {
+        font-size: 1.6rem;
+        line-height: 1.4em;
+        font-weight: 600;
+    }
+}
+
+//
+// Standard text
+//
+
+.standard-text {
+    font-weight: 400;
+    font-family: $fontInter;
+    font-size: 1.6rem;
+    color: $navy;
+
+    &--white {
+        color: $white;
+    }
+
+    &--brown {
+        color: $mandarin;
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 1.6;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        color: $mandarin;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    b,
+    strong {
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        color: $navy;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+
+    h3 {
+        font-size: 4rem;
+        color: $navy;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 3.5rem;
+        color: $navy;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    h5 {
+        font-size: 3rem;
+        color: $navy;
+        font-weight: 700;
+        // margin-bottom: 20px;
+    }
+
+    h6 {
+        font-size: 2.5rem;
+        color: $navy;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    & ul {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    & li {
+        line-height: 1.6;
+        padding-left: 18px;
+        position: relative;
+        margin-bottom: 6px;
+    }
+
+    ul li::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        left: 0;
+        top: 10px;
+        border-radius: 100%;
+    }
+}

@@ -1,0 +1,7 @@
+// glowing dot
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 0px $mandarin; }
+    50% { box-shadow: 0 0 8px 1px $mandarin; }
+    100% { box-shadow: 0 0 0px $mandarin; }
+}

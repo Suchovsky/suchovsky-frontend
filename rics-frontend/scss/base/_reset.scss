@@ -1,0 +1,40 @@
+// reset
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 62.5%;
+    /* For better font-size styling 0.625 * 16px = 10px -> 1rem = 10px */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+button {
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+}
+
+input {
+    border: none;
+}

@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+// layout
+
+.wrapper {
+    width: 100vw;
+    overflow: hidden;
+    &--background {
+        background-size: 0px;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+
+        @media #{$screen-768} {
+            background-size: 720px;
+        }
+    }
+}
+
+.container {
+    width: calc(100% - 24px);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 0;
+    &--narrow {width: calc(100% - 24px)}
+    &--extended {width: calc(100% - 24px)}
+}
+
+@media #{$screen-768} {
+    .container {
+        width: calc(100% - 40px);
+        &--narrow {width: calc(100% - 40px);}
+        &--extended {width: calc(100% - 40px);}
+    }
+}
+
+@media #{$screen-1200} {
+    .container {
+        width: 1180px;
+        &--narrow {width: 760px;}
+        &--extended {width: 1080px;}
+    }
+}
+
+
+// @media #{$screen-1280} {
+//     .container {
+//         width: 1180px;
+//         &--narrow {width: 760px;}
+//         &--extended {width: 1180px;}
+//     }
+// }
+
+@media #{$screen-1400} {
+    .container {
+        &--extended {width: 1340px;}
+    }
+}
+
+//section
+.section {
+
+    & {
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        // &:first-of-type {
+        //     margin-top: 60px; // offset menu
+        // }
+        // &:last-of-type {
+        //     margin-bottom: 0;
+        //     padding-bottom: 80px;
+        // }
+    }
+    // &--short {
+    //     margin-top: 0px;
+    //     margin-bottom: 0px;
+    // }
+
+    @media #{$screen-768} {
+        & {
+            // margin-top: 20px;
+            // margin-bottom: 20px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+    
+            // &:first-of-type {
+            //     margin-top: 80px; // offset menu
+            // }
+            // &:last-of-type {
+            //     margin-bottom: 0;
+            //     padding-bottom: 120px;
+            // }
+        }
+    }
+
+    @media #{$screen-1200} {
+        & {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+            // &:last-of-type {
+            //     margin-bottom: 0;
+            //     padding-bottom: 160px;
+            // }
+        }
+    }
+}

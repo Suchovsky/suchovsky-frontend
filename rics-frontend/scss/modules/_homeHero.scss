@@ -1,0 +1,143 @@
+.homeHero {
+
+    &__section {
+        padding-top: 12px;
+
+        @media #{$screen-768} {
+            padding-top: 48px;
+        }
+        @media #{$screen-1200} {
+            padding-top: 60px;
+        }
+    }
+    &__cont {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+
+        @media #{$screen-768} {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px;
+        }
+
+        @media #{$screen-1200} {
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+        }
+    }
+    &__contTxt {
+        order: 1;
+
+        @media #{$screen-768} {
+            order: 0;
+        }
+
+        @media #{$screen-1200} {
+            grid-column: span 6;
+        }
+        
+    }
+    &__contImg {
+        padding: 0 54px 8px 0;
+
+        @media #{$screen-768} {
+            padding: 0 8px 8px 0;
+        }
+        @media #{$screen-1200} {
+            grid-column: 9 / span 4;
+        }
+    }
+
+    // txt
+    &__heading {
+        margin-bottom: 8px;
+    }
+    &__subheading {
+        margin-bottom: 20px;
+        font-size: 3.2rem;
+        line-height: 1.2em;
+        letter-spacing: -0.03em;
+        color: $navyFaded;
+
+        @media #{$screen-768} {
+            margin-bottom: 32px;
+        }
+
+        @media #{$screen-1200} {
+            font-size: 4.8rem;
+        }
+    }
+    &__desc {
+        margin-bottom: 32px;
+
+        @media #{$screen-768} {
+            margin-bottom: 48px;
+        }
+
+        & span {
+            text-decoration: underline 2px $mandarin;
+        }
+    }
+
+    // img
+    &__image {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        // background-color: $navy;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 8px 8px #f4f4f4;
+
+        @media #{$screen-768} {
+            height: 460px;
+        }
+    }
+    &__imageMask {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(294deg, rgba($navy, .44), transparent 40%);
+
+        @media #{$screen-768} {
+            background-image: linear-gradient(66deg, rgba($navy, .4), transparent 36%);
+        }
+    }
+    &__imageStamp {
+        position: absolute;
+        right: -40px;
+        bottom: 16px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 200ms ease-out;
+
+        @media #{$screen-768} {
+            right: auto;
+            left: -48px;
+            bottom: 48px;
+            width: 96px;
+            height: 96px;
+        }
+
+        @media #{$screen-1200} {
+            right: auto;
+            left: -60px;
+            bottom: 60px;
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    // mark
+    &__subMark {
+        margin-top: 40px;
+
+        @media #{$screen-768} {
+            margin-top: 24px;
+        }
+    }
+}

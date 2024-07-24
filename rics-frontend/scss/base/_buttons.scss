@@ -1,0 +1,71 @@
+.button {
+    & {
+        display: inline-block; // changed from : block;
+        border: 1px solid $navy;
+        border-radius: 100px;
+        padding: 8px 20px;
+        font-family: $fontInter;
+        font-size: 1.8rem;
+        line-height: 1em;
+        font-weight: 500;
+        color: $navy;
+        background-color: transparent;
+        text-decoration: none;
+        transition: 300ms;
+        z-index: 1;
+
+        &:hover {
+            background-color: $mandarin;
+        }
+
+        &--white {
+            color: $white;
+            border-color: $white;
+
+            &:hover {
+                color: $mandarin;
+                border-color: $mandarin;
+                background-color: transparent;
+            }
+        }
+
+        @media #{$screen-1200} {
+            font-size: 2rem;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        @media #{$screen-768} {
+            gap: 40px;
+        }
+    }
+}
+
+// link
+.link {
+    & {
+        color: $navy;
+        text-decoration: underline;
+        transition: 300ms;
+
+        &--white {
+            color: $white;
+
+            &:hover {
+                color: $mandarin;
+            }
+        }
+
+        &--faded {
+            color: $navyFaded;
+            text-underline-offset: 4px;
+
+            &:hover {
+                color: $mandarin;
+            }
+        }
+    }
+}
